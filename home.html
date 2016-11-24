@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>UI Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        function pic1() {
+            document.getElementById("myImg").style.display = 'block';
+        }
+
+        function hide() {
+            document.getElementById("myImg").style.display = 'none';
+        }
+    </script>
+
+    <div class="container">
+
+        <header>
+            <h1>City Gallery</h1>
+        </header>
+
+
+        <ul>
+            <li><a href="new.html">London</a></li>
+            <li><a href="new.html">Paris</a></li>
+            <li><a href="new.html">Tokyo</a></li>
+            <li><a href="form.html">Registration</a></li>
+        </ul>
+
+
+        <div class="svgimg">
+            <svg height="130" width="100%">
+        <a xlink:href="new.html">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <<rect x="60" y="10" rx="10" ry="10" width="300" height="400" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="30" font-family="Verdana" x="100" y="86">Play the Video</text>
+  Sorry, your browser does not support inline SVG.
+  </a>
+</svg>
+        </div>
+
+        <footer>City Gallery</footer>
+
+    </div>
+
+</body>
+
+</html>

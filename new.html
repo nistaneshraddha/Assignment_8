@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <header>
+            <h1>City Gallery</h1>
+        </header>
+
+
+        <ul>
+            <li><a href="new.html">London</a></li>
+            <li><a href="new.html">Paris</a></li>
+            <li><a href="new.html">Tokyo</a></li>
+            <li><a href="form.html">Registration</a></li>
+        </ul>
+
+
+
+
+        <a href="Home.html" class="button">Back to Home</a>
+
+        <div style="text-align:center">
+            <button class="textsize" onclick="playPause()">Play/Pause</button>
+            <button class="textsize" onclick="makeBig()">Big</button>
+            <button class="textsize" onclick="makeSmall()">Small</button>
+            <button class="textsize" onclick="makeNormal()">Normal</button>
+            <br><br>
+            <video id="video1" width="420">
+    <source src="video/sample.mp4" type="video/mp4">
+    
+    Your browser does not support HTML5 video.
+  </video>
+        </div>
+
+
+
+    </div>
+    <script type="text/javascript">
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+
+        function makeBig() {
+            myVideo.width = 700;
+        }
+
+        function makeSmall() {
+            myVideo.width = 320;
+        }
+
+        function makeNormal() {
+            myVideo.width = 600;
+        }
+    </script>
+
+
+</body>
+
+</html>
